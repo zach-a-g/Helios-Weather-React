@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### References:
+
+As a resource, I used a tutorial that is listed below to help me navigate fetching specific data I needed from the Openweather API. 
+Source: Hong Ly - [https://www.youtube.com/watch?v=j_BO0VKX0yI]

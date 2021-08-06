@@ -1,38 +1,211 @@
+body {
+    background-image: url(./images/widesunset.jpg);
+    background-position-x: center;
+    background-position-y: center;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+    background-color: rgb(245, 158, 45);
+    position: sticky;
+    top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#navLinks {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding-right: 10px;
+    background-color: none;
+    border: none;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-weight: 325;
+    font-size: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#homeNav {
+    font-weight: 800;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+    text-decoration: none;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+    font-size: smaller;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+h4 {
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    text-decoration: none;
+    padding-left: 0;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+}
+
+li {
+    height: 100%;
+    align-items: center;
+    align-content: center;
+}
+
+#navBarRight {
+    text-decoration: none;
+}
+
+#navWidth {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 90vw;
+    margin: auto;
+}
+
+#loadingScreen {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#signinButton {
+    width: 70px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+#logoutButton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-top: 4px;
+}
+
+#navPic {
+    border-radius: 50%;
+    width: 50%;
+    align-content: center;
+    align-items: center;
+}
+
+#weatherCard {
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.74);
+    width: 80%;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    display: flex;
+    min-width: 305px;
+    min-height: 285px;
+}
+
+#tempBox {
+    display: flex;
+    align-items: center;
+}
+
+#button1 {
+    background-color: rgb(245, 158, 45);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 10px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+#mainContainer {
+    display: flex;
+}
+
+#container1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#container2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#weatherDetails {
+    text-align: right;
+    padding-right: 5px;
+}
+
+#weatherDetailsTemp {
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+#allDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+}
+
+#weeklyDetails {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 45px;
+    justify-content: center;
+    padding: 4px;
+}
+
+#weeklyUl {
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 5px;
+    flex-direction: row;
+}
+
+#dailyDetails {}
+
+#gpsIcon {
+    background-image: url(./images/gpsicon.png);
 }
