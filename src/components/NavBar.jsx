@@ -9,7 +9,7 @@ const NavBar = () => {
             <div id="navWidth">
                 <div id="navLogo">
                     <a href="/">
-                        <h1>Helios Weather</h1>
+                        <h1><i class="fas fa-sun"></i> Helios Weather</h1>
                     </a>
                 </div>
                 <div id="navBarRight">

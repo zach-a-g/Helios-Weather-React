@@ -14,6 +14,10 @@ nav {
     background-color: rgb(245, 158, 45);
     position: sticky;
     top: 0;
+    height: 60px;
+    align-items: center;
+    align-content: center;
+    z-index: 2;
 }
 
 #navLinks {
@@ -31,10 +35,12 @@ nav {
     justify-content: center;
     font-weight: 325;
     font-size: 14px;
+    z-index: 2;
 }
 
 #homeNav {
     font-weight: 800;
+    z-index: 2;
 }
 
 a {
@@ -69,6 +75,7 @@ li {
 
 #navBarRight {
     text-decoration: none;
+    z-index: 2;
 }
 
 #navWidth {
@@ -79,6 +86,8 @@ li {
     align-content: center;
     width: 90vw;
     margin: auto;
+    height: 60px;
+    z-index: 2;
 }
 
 #loadingScreen {
@@ -118,7 +127,7 @@ li {
 #weatherCard {
     margin: auto;
     background-color: rgba(255, 255, 255, 0.74);
-    width: 80%;
+    width: 45%;
     border-radius: 8px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -126,11 +135,13 @@ li {
     display: flex;
     min-width: 305px;
     min-height: 285px;
+    flex-wrap: wrap;
 }
 
 #tempBox {
     display: flex;
     align-items: center;
+    width: 50%;
 }
 
 #button1 {
@@ -145,19 +156,25 @@ li {
 
 #mainContainer {
     display: flex;
+    flex-direction: column;
 }
 
 #container1 {
-    width: 50%;
+    width: 95%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5px;
+    margin: auto;
+    justify-content: space-evenly;
 }
 
 #container2 {
-    width: 50%;
+    width: 95%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin: 5px;
+    margin: auto;
+    justify-content: space-evenly;
 }
 
 #weatherDetails {
@@ -166,7 +183,7 @@ li {
 }
 
 #weatherDetailsTemp {
-    font-size: 60px;
+    font-size: 40px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -176,9 +193,13 @@ li {
 #allDetails {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 75%;
-    margin: auto;
+    justify-content: space-evenly;
+    /* margin: auto; */
+    /* margin: 0; */
+    /* justify-content: center; */
+    /* align-content: flex-end; */
+    align-items: center;
+    width: 100%;
 }
 
 #weeklyDetails {
@@ -189,9 +210,17 @@ li {
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-    width: 45px;
+    width: 90%;
     justify-content: center;
     padding: 4px;
+}
+
+#weeklyDetailsLi {
+    list-style-type: none;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 #weeklyUl {
@@ -204,8 +233,77 @@ li {
     flex-direction: row;
 }
 
-#dailyDetails {}
+#weekIcons {
+    width: 100%;
+}
 
-#gpsIcon {
-    background-image: url(./images/gpsicon.png);
+#currentIcon {
+    width: auto;
+}
+
+#dailyAlerts {
+    width: 95%;
+    text-align: left;
+    margin: auto;
+    margin: 15px;
+    font-size: 12px;
+}
+
+#airQuality {
+    background-image: url(./images/airQuality.png);
+}
+
+
+/* Mapbox info */
+
+.MapBox {
+    display: flex;
+    justify-content: center;
+}
+
+.map-container {
+    height: 350px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.sidebar {
+    background-color: rgba(35, 55, 75, 0.9);
+    color: #ffffff;
+    padding: 0;
+    font-family: monospace;
+    z-index: 1;
+    position: absolute;
+    margin: 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+#sidebarContainer {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* YouTube video */
+
+#weatherCard2 {
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.74);
+    width: 90.2%;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    display: flex;
+    min-width: 305px;
+    min-height: 285px;
+}
+
+#youtube {
+    margin: 15px;
+    width: 90%
 }
