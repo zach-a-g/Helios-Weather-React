@@ -1,7 +1,9 @@
-body {
-    background-image: url(./images/widesunset.jpg);
-    background-position-x: center;
-    background-position-y: center;
+html {
+    background: url(images/cloudsBackground.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .App {
@@ -9,6 +11,39 @@ body {
     flex-direction: column;
     display: flex;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-size: smaller;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+h4 {
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    text-decoration: none;
+    padding-left: 0;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+}
+
+li {
+    height: 100%;
+    align-items: center;
+    align-content: center;
+}
+
+
+/* Nav Bar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 nav {
     background-color: rgb(245, 158, 45);
@@ -43,36 +78,6 @@ nav {
     z-index: 2;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
-p {
-    font-size: smaller;
-    margin-top: 2px;
-    margin-bottom: 2px;
-}
-
-h4 {
-    margin: 0;
-}
-
-ul {
-    display: flex;
-    text-decoration: none;
-    padding-left: 0;
-    height: 100%;
-    align-content: center;
-    align-items: center;
-}
-
-li {
-    height: 100%;
-    align-items: center;
-    align-content: center;
-}
-
 #navBarRight {
     text-decoration: none;
     z-index: 2;
@@ -89,6 +94,9 @@ li {
     height: 60px;
     z-index: 2;
 }
+
+
+/* Body Elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 #loadingScreen {
     margin: auto;
@@ -126,7 +134,8 @@ li {
 
 #weatherCard {
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.74);
+    background-color: rgba(133, 128, 128, 0.678);
+    color: white;
     width: 45%;
     border-radius: 8px;
     margin-top: 10px;
@@ -142,6 +151,7 @@ li {
     display: flex;
     align-items: center;
     width: 50%;
+    justify-content: center;
 }
 
 #button1 {
@@ -178,12 +188,18 @@ li {
 }
 
 #weatherDetails {
-    text-align: right;
     padding-right: 5px;
 }
 
+#otherDetails {
+    width: 50%;
+    justify-content: revert;
+    display: flex;
+    flex-direction: column;
+}
+
 #weatherDetailsTemp {
-    font-size: 40px;
+    font-size: 4rem;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -194,10 +210,6 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    /* margin: auto; */
-    /* margin: 0; */
-    /* justify-content: center; */
-    /* align-content: flex-end; */
     align-items: center;
     width: 100%;
 }
@@ -206,7 +218,7 @@ li {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    font-size: 12px;
+    font-size: .6rem;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
@@ -220,21 +232,29 @@ li {
     align-items: center;
     align-content: center;
     display: flex;
+    width: auto;
     justify-content: center;
+    /* border-right: .3px solid gray;
+    border-left: .3px solid gray;
+    line-height: 5px; */
 }
 
 #weeklyUl {
+    display: flex;
     height: auto;
     width: auto;
     justify-content: center;
     align-content: center;
-    align-items: center;
+    align-items: baseline;
     margin: 5px;
     flex-direction: row;
+    /* flex-wrap: wrap;
+    flex: 1 0 21%; */
 }
 
 #weekIcons {
     width: 100%;
+    display: flex;
 }
 
 #currentIcon {
@@ -254,11 +274,12 @@ li {
 }
 
 
-/* Mapbox info */
+/* Mapbox info ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .MapBox {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .map-container {
@@ -285,14 +306,17 @@ li {
 #sidebarContainer {
     display: flex;
     justify-content: center;
+    width: 100%;
+    position: absolute;
 }
 
 
-/* YouTube video */
+/* YouTube video ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 #weatherCard2 {
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.74);
+    background-color: rgba(133, 128, 128, 0.678);
+    color: white;
     width: 90.2%;
     border-radius: 8px;
     margin-top: 10px;
@@ -306,4 +330,44 @@ li {
 #youtube {
     margin: 15px;
     width: 90%
+}
+
+
+/* Mobile Responsiveness ~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media only screen and (max-width: 900px) {
+    #weeklyUl {
+        flex-wrap: wrap;
+    }
+    #weeklyDetailsLi {
+        border-bottom: .2px solid black;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #container1,
+    #container2,
+    #mainContainer {
+        flex-direction: column;
+    }
+    .MapBox {
+        width: 100%
+    }
+    .map-container {
+        width: 100vw;
+        height: 275px;
+    }
+    body {
+        background-repeat: repeat;
+        background-position: top;
+    }
+    #weatherCard {
+        width: 95%
+    }
+}
+
+@media only screen and (min-width:1900px) {
+    body {
+        background-repeat: repeat;
+    }
 }

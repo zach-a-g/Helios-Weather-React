@@ -1,5 +1,5 @@
-import React, { useRef, useEffect, useState } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import React from 'react';
+// import { BrowserRouter } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import SearchForm from './components/SearchForm';
 import { useAuth0 } from '@auth0/auth0-react';
@@ -19,7 +19,7 @@ function App() {
         <NavBar />
         <SearchForm />
         <YoutubeEmbed />
-      </div>
+      </div> 
     );
 }
 
