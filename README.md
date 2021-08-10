@@ -2,7 +2,7 @@
 
 Welcome to Helios! Wondering what the weather is like at home? In Chicago? Dallas? Its all one click away. With our state-of-the-art API calling system, you can find out all the information you need to know on how hot and humid it is in Texas. Features include calling current weather with zip-code, calling a 7 day forecast using a zip-code, Seeing weather alerts in your area, viewing the current precipitation status on a map, and watching up-to-date weather news via TheWeatherChannel YouTube. 
 
-This React project uses 2 separate API's and makes multiple fetch calls. 
+This React project uses 2 separate API's and makes multiple fetch calls. Auth0 is also used for user authentication.
 
 ## API's:
 
@@ -18,6 +18,8 @@ Source: Hong Ly - [https://www.youtube.com/watch?v=j_BO0VKX0yI]
 Mapbox - [https://mapbox.com]
 
 OpenWeatherAPI - [https://openweathermap.org/api/one-call-api]
+
+Auth0 for user authentication.
 
 # Screenshots:
 
