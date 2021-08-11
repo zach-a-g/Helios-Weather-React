@@ -28,7 +28,7 @@ const Map = () => {
         onViewportChange={setViewport}
         width="95%"
         height="350px"
-        mapboxApiAccessToken="pk.eyJ1IjoiemFjaGdsZWVzb24iLCJhIjoiY2tzM3UwYnN0MmhnajJvbzdxMm9wamNwcyJ9.-jcEmnJfCo9VcVZDYgxghQ"
+        mapboxApiAccessToken="pk.eyJ1IjoiemFjaGdsZWVzb24iLCJhIjoiY2tzNnVic2VzM2JtdzJ2bzdmMzdyYmxkdyJ9.z_rOUqVzbkOXt_gcnkUM9Q"
       >
         <Layer {...weatherLayer} />
       </ReactMapGL>

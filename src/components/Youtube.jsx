@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const YoutubeEmbed = () => (
+const YouTubeEmbed = () => (
     <div id="weatherCard2">
         <h3>Storm Watch</h3> 
         <div className="video-responsive">
@@ -16,9 +16,9 @@ const YoutubeEmbed = () => (
     </div>
 );
 
-YoutubeEmbed.propTypes = {
+YouTubeEmbed.propTypes = {
   embedId: PropTypes.string.isRequired
 };
 
-export default YoutubeEmbed;
+export default YouTubeEmbed;
 // Data gets plugged into App.js
