@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 const YouTubeEmbed = () => (
     <div id="weatherCard2">
@@ -11,14 +11,14 @@ const YouTubeEmbed = () => (
         src="https://www.youtube.com/embed/YfOF_ggEcRo" title="YouTube video player" 
         frameBorder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen></iframe>
+        ></iframe>
         </div>
     </div>
 );
 
-YouTubeEmbed.propTypes = {
-  embedId: PropTypes.string.isRequired
-};
+// YouTubeEmbed.propTypes = {
+//   embedId: PropTypes.string.isRequired
+// };
 
 export default YouTubeEmbed;
 // Data gets plugged into App.js
