@@ -1,4 +1,4 @@
-![](public/heliosWeatherLogo)
+![](public/heliosWeatherLogo.png)
 
 # Helios Weather App
 
