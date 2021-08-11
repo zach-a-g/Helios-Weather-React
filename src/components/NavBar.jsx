@@ -1,6 +1,6 @@
 import React from "react";
-import Signin from "./Signin";
-import Logout from "./Logout";
+// import Signin from "./Signin";
+// import Logout from "./Logout";
 
 const NavBar = () => {
 
@@ -16,7 +16,7 @@ const NavBar = () => {
                     <ul>
                         
                         <li id="navLinks">
-                            <Signin />
+                            {/* <Signin /> */}
                         </li>
 
                         <li id="navLinks">
@@ -26,7 +26,7 @@ const NavBar = () => {
                         </li>
                         
                         <li id="navLinks">
-                            <Logout />
+                            {/* <Logout /> */}
                         </li>
                 
                     </ul>
